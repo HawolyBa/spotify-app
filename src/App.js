@@ -18,8 +18,6 @@ class App extends Component {
       username: "",
       playlists: []
     }
-
-    console.log(window.location.search)
   }
 
   componentDidMount() {
@@ -54,7 +52,7 @@ class App extends Component {
         </div>
        : 
         <button onClick={() => {
-          window.location = 'http://playstify-backend.herokuapp.com/login'
+          window.location = 'https://playstify-backend.herokuapp.com/login'
         }} >Se connecter à Spotify</button>
 }
       </div>
