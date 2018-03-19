@@ -27,21 +27,21 @@ class Playlists extends Component {
     }
     
   render() {
+        const playlists = this.props.playlists.map((playlist,i) =>(
+            <div key={i} style={gridItem} >
+                <a href={playlist.external_urls.spotify} target="_blank" >
+                    <img src={ playlist.images[0].url } style={{width: "160px"}} />
+                    <h3>{playlist.name}</h3>
+                </a>
+            </div>  
+          ))
       
-      const playlists = this.props.playlists.map((playlist,i) =>(
-        <div key={i} style={gridItem} >
-            <a href={playlist.external_urls.spotify} target="_blank" >
-                <img src={ playlist.images[0].url } style={{width: "160px"}} />
-                <h3>{playlist.name}</h3>
-            </a>
-        </div>  
-      ))
     return (
       <section className="Playlists" style={playlistStyle}>
         {this.props.children}
         <h2>Playlists</h2>
         <div style={playlistGrid} className="playlistGrid" >
-             {playlists}
+             {this.props.playlists && playlists}
         </div>
       </section>
     )

@@ -39,6 +39,9 @@ class App extends Component {
        playlists: data.items
      }))
 
+     if (!accessToken) {
+      window.location = "http://playstify-backend.herokuapp.acom/login"
+    }
      
 
   }
