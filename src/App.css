@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: white
+  color: white;
 }
 
 .wrapper {
@@ -19,5 +19,21 @@
 
 h2 {
   font-size: 30px;
-  font-weight: lighter
+  font-weight: lighter;
+  padding-bottom: 15px
+}
+
+h3 {
+  font-size: 12px;
+  padding-top: 8px
+}
+
+a,
+a:hover {
+  color: white;
+  text-decoration: none
+}
+
+::-webkit-scrollbar { 
+  display: none
 }
