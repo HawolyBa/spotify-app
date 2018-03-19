@@ -18,6 +18,8 @@ class App extends Component {
       username: "",
       playlists: []
     }
+
+    console.log(window.location.search)
   }
 
   componentDidMount() {
@@ -39,23 +41,24 @@ class App extends Component {
        playlists: data.items
      }))
 
-     if (accessToken) {
-      window.location = "http://playstify-backend.herokuapp.com/login"
-    }
-     
-
   }
-
   render() {
     return (
-      
       <div className="App">
+        { this.state.username ? 
         <div className="wrapper">
           <User username={this.state.username} userpic={this.state.userpic} />
           <Playlists playlists={this.state.playlists}>
             <SearchForm/>
           </Playlists>
         </div>
+       : 
+        <button onClick={() => {
+          window.location = window.location.includes("localhost")
+          ?  'http://localhost:8888/login'
+          : 'https://playstify-backend.herokuapp.com/login'
+        }} >Se connecter à Spotify</button>
+}
       </div>
     );
   }
