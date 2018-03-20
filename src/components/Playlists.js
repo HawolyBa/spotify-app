@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 
-let playlistStyle = {
-    padding: "50px 50px 50px 20px",
-    width: "70%",
-    overflow: "hidden"
-}
-
 let playlistGrid = {
     display: "flex",
     flexFlow: "row wrap",
-    justifyContent: "flex-start",
+    justifyContent: "center",
 }
 
 let gridItem = {
@@ -37,7 +31,7 @@ class Playlists extends Component {
           ))
       
     return (
-      <section className="Playlists" style={playlistStyle}>
+      <section className="Playlists">
         {this.props.children}
         <h2>Playlists</h2>
         <div style={playlistGrid} className="playlistGrid" >

@@ -3,18 +3,29 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
 }
 
 .wrapper {
   background-color: white;
-  height: 90vh;
-  min-width: 80%;
+  min-height: 90vh;
+  width: 80%;
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
   background: linear-gradient(to right,rgb(0, 0, 0), rgb(25, 7, 45));
   display: flex;
   flex-flow: row nowrap;
+}
+
+.User {
+  padding: 30px;
+  text-align: center;
+  width: 30%
+}
+
+.Playlists {
+  width: 70%;
+  padding: 30px
 }
 
 h2 {
@@ -36,4 +47,13 @@ a:hover {
 
 ::-webkit-scrollbar { 
   display: none
+}
+
+@media screen and (max-width: 936px) {
+  .wrapper {
+    flex-flow: column
+  }
+  .User, .Playlists {
+    width: 100%
+  }
 }

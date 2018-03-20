@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-let userStyle = {
-    padding: "30px",
-    textAlign: "center",
-    width: "30%"
-}
 
 let userpic = {
     width: "120px",
@@ -19,7 +14,7 @@ class User extends Component {
     
   render() {
     return (
-      <section className="User" style={userStyle}>
+      <section className="User">
         <h2>{this.props.username}</h2>
         <img src={this.props.userpic} alt={this.props.username} style={userpic} />
       </section>
