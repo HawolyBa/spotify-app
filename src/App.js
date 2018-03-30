@@ -106,7 +106,9 @@ class App extends Component {
         </div>
        : 
         <button onClick={() => {
-          window.location = 'http://localhost:8888/login'
+          window.location = window.location.href.includes('localhost') 
+          ? 'http://localhost:8888/login'
+          : 'https://playstify-backend.herokuapp.com'
         }} >Se connecter à Spotify</button>
 }
       </div>
