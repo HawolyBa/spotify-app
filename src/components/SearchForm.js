@@ -6,16 +6,17 @@ let formStyle = {
     border: "none",
     outline: "none",
     borderBottom: "solid 1px green",
-    color: "white",
+    color: "#222",
     marginBottom: "50px",
     padding: "5px"
 }
 
 class SearchForm extends Component {
+  
   render() {
     return (
-      <form>
-        <input type="text" name="searchform" style={formStyle} placeholder="Search a song or a playlist" />
+      <form onSubmit={e => e.preventDefault()}>
+        <input onKeyUp={e => this.props.onTextChange(e.target.value)} type="text" name="searchform" style={formStyle} placeholder="Search a playlist" />
       </form>
     )
   }
