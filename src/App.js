@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
+
+import spotify from "./img/spotify.png"
 
 import SearchForm from './components/SearchForm';
 import User from './components/User';
@@ -7,7 +9,13 @@ import Playlists from './components/Playlists';
 
 import queryString from 'query-string';
 
-
+const button = {
+  padding: "5px 20px",
+  color: "#1ed760",
+  borderRadius: "15px",
+  border: "none",
+  boxShadow: "0 0 10px #a8a8a8"
+}
 
 class App extends Component {
 
@@ -105,11 +113,15 @@ class App extends Component {
           </Playlists>
         </div>
        : 
+       <Fragment>
+         <h1 style={{color: "white", textShadow: "0px 0px 5px rgb(96,96,96"}}>Playstify</h1>
+       <img style={{width: "160px", margin: "30px 0"}} src={spotify} alt="spotify-logo"/>
         <button onClick={() => {
           window.location = window.location.href.includes('localhost') 
           ? 'http://localhost:8888/login'
           : 'https://playstify-backend.herokuapp.com/login'
-        }} >Connect to Spotify</button>
+        }} style={button}>Connect to Spotify</button>
+        </Fragment>
 }
       </div>
     );
