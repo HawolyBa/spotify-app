@@ -36,9 +36,9 @@ class App extends Component {
     fetch("https://api.spotify.com/v1/me/", {
      headers: { 'Authorization': 'Bearer ' + accessToken }
    }).then(res => res.json())
-     .then(data => data && this.setState({
+     .then(data => this.setState({
        username: data.display_name,
-       userpic: data.images[0].url,
+       userpic: data && data.images[0].url,
        country: data.country,
        followers: data.followers.total,
        uri: data.external_urls.spotify
@@ -49,7 +49,7 @@ class App extends Component {
    }).then(res => res.json())
      .then(playlistData => {
       let playlists = playlistData.items
-      let trackDataPromises = playlists.map(playlist => {
+      let trackDataPromises = playlists && playlists.map(playlist => {
         let responsePromise = fetch(playlist.tracks.href, {
           headers: { 'Authorization': 'Bearer ' + accessToken }
         })
