@@ -66,7 +66,7 @@ class App extends Component {
           .map(trackData => ({
             name: trackData.name,
             duration: trackData.duration_ms
-          }))
+          }));
         })
         return playlists;
       })
