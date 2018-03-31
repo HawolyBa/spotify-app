@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import './App.css';
+import './style/App.css';
 
 import spotify from "./img/spotify.png"
 
@@ -44,7 +44,7 @@ class App extends Component {
        uri: data.external_urls.spotify
      }))
 
-     fetch("https://api.spotify.com/v1/me/playlists", {
+     fetch("https://api.spotify.com/v1/me/playlists?limit=50", {
      headers: { 'Authorization': 'Bearer ' + accessToken }
    }).then(res => res.json())
      .then(playlistData => {
@@ -111,6 +111,7 @@ class App extends Component {
           >
             <SearchForm onTextChange={text => this.setState({filter: text})} />
           </Playlists>
+          <div className="trick"></div>
         </div>
        : 
        <Fragment>

@@ -1,19 +1,6 @@
 import React, { Component } from 'react';
+import '../style/Playlists.css'
 
-let playlistGrid = {
-    display: "flex",
-    flexFlow: "row wrap",
-    justifyContent: "flex-start",
-}
-
-let gridItem = {
-    display: "flex",
-    flexFlow: "column",
-    marginRight: "15px",
-    marginBottom: "15px",
-    textAlign: "center",
-    maxWidth: "150px"
-}
 
 class Playlists extends Component {
 
@@ -21,9 +8,9 @@ class Playlists extends Component {
         const playlists = this.props.playlists && this.props.playlists.filter((playlist, i) => {
              return playlist && playlist.name.toLowerCase().includes(this.props.filter.toLowerCase())
          }).map((playlist,i) =>(
-            <div key={i} style={gridItem} >
+            <div key={i} className="gridItem" >
                 <a href={playlist.external_urls.spotify} target="_blank" >
-                    <img src={ playlist.images[0].url } style={{width: "150px"}} alt={playlist.name} />
+                    <img src={ playlist.images[0].url } alt={playlist.name} />
                     <h3>{playlist.name}</h3>
                 </a>
             </div>  
@@ -31,7 +18,7 @@ class Playlists extends Component {
     return (
       <section className="Playlists">
         {this.props.children}
-        <div style={playlistGrid} className="playlistGrid" >
+        <div className="playlistGrid" className="playlistGrid" >
              {this.props.playlists && playlists}
         </div>
       </section>

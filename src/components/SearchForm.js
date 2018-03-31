@@ -7,8 +7,9 @@ let formStyle = {
     outline: "none",
     borderBottom: "solid 1px green",
     color: "#222",
-    marginBottom: "50px",
-    padding: "5px"
+    marginBottom: "30px",
+    padding: "5px",
+    height: "50px"
 }
 
 class SearchForm extends Component {

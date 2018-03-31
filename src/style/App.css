@@ -5,27 +5,18 @@
   align-items: center;
   min-height: 100vh;
   color:#222;
+  overflow: hidden
 }
 
 .wrapper {
   background-color: #F4F6F9;
-  min-height: 90vh;
+  height: 90vh;
   width: 80%;
   box-shadow: 0px 0px 12px rgba(203, 203, 203, 0.8);
   display: flex;
   flex-flow: row nowrap;
-  border-radius: 10px
-}
-
-
-.Playlists {
-  width: 80%;
-  padding: 30px
-}
-
-table td {
-  background-color: white;
-  color: #1ed760
+  border-radius: 10px;
+  overflow: hidden
 }
 
 h2 {
@@ -45,15 +36,32 @@ a:hover {
   text-decoration: none
 }
 
-::-webkit-scrollbar { 
-  display: none
+.trick {
+  width: 30px;
+  height: 90vh;
+  background-color: #F4F6F9;
+  position: fixed;
+  left: 87%
 }
 
-@media screen and (max-width: 936px) {
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 992px) {
+  .trick {
+    display: none
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .wrapper {
     flex-flow: column
   }
-  .User, .Playlists {
-    width: 100%
+
+  .trick {
+    height: 70vh;
+    top: 25%
   }
 }

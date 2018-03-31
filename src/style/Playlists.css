@@ -1,0 +1,58 @@
+.Playlists {
+  min-width: 80%;
+  padding: 30px;
+  margin-left: calc(15% + 60px);
+}
+
+.playlistGrid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-height: 100%;
+}
+
+.gridItem {
+  display: flex;
+  flex-flow: column;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  max-width: 140px;
+}
+
+.gridItem img {
+  width: 140px
+}
+
+@media screen and (max-width: 1200px) {
+  .Playlists {
+    width: 100%;
+    margin-left: 0;
+    overflow-y: scroll
+  }
+  .playlistGrid {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .Playlists {
+    padding: 10px;
+    height: 80%;
+    
+  }
+  .gridItem {
+    max-width: 80px;
+    margin-right: 10px;
+  }
+  .gridItem img {
+    width: 80px
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .playlistGrid {
+    overflow: scroll
+  }
+}
