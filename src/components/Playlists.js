@@ -18,7 +18,7 @@ let gridItem = {
 class Playlists extends Component {
 
   render() {
-        const playlists = this.props.playlists.filter((playlist, i) => {
+        const playlists = this.props.playlists && this.props.playlists.filter((playlist, i) => {
              return playlist && playlist.name.toLowerCase().includes(this.props.filter.toLowerCase())
          }).map((playlist,i) =>(
             <div key={i} style={gridItem} >
