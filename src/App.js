@@ -121,7 +121,7 @@ class App extends Component {
           window.location = window.location.href.includes('localhost') 
           ? 'http://localhost:8888/login'
           : 'https://playstify-backend.herokuapp.com/login'
-        }} style={button}>Connect to Spotify</button>
+        }} style={button}>Login to Spotify</button>
         </Fragment>
 }
       </div>
