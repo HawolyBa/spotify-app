@@ -5,11 +5,11 @@ let formStyle = {
     background: "transparent",
     border: "none",
     outline: "none",
-    borderBottom: "solid 1px green",
+    borderBottom: "solid 1px #dbc7c7fa",
     color: "#222",
     marginBottom: "30px",
     padding: "5px",
-    height: "50px"
+    height: "50px",
 }
 
 class SearchForm extends Component {

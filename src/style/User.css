@@ -2,7 +2,7 @@
   width: 15%;
   padding: 30px;
   text-align: center;
-  background: url(../img/logo.png), #1ed760;
+  background: url(../img/logo.png), rgba(255,255,255,0.3);
   background-size: 50%;
   background-position: center 105%;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ table {
 
 table td {
   background-color: white;
-  color: #1ed760;
+  color: #222;
   padding: 3px
 }
 

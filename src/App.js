@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './style/App.css';
 
-import spotify from "./img/spotify.png"
+import logo from './img/logo.png'
 
 import SearchForm from './components/SearchForm';
 import User from './components/User';
@@ -11,7 +11,8 @@ import queryString from 'query-string';
 
 const button = {
   padding: "5px 20px",
-  color: "#1ed760",
+  color: "#23CF5F",
+  background: "rgba(255, 255, 255, 0.6)",
   borderRadius: "15px",
   border: "none",
   boxShadow: "0 0 10px #a8a8a8"
@@ -111,12 +112,11 @@ class App extends Component {
           >
             <SearchForm onTextChange={text => this.setState({filter: text})} />
           </Playlists>
-          <div className="trick"></div>
         </div>
        : 
        <Fragment>
          <h1 style={{color: "white", textShadow: "0px 0px 5px rgb(96,96,96"}}>Playstify</h1>
-       <img style={{width: "160px", margin: "30px 0"}} src={spotify} alt="spotify-logo"/>
+       <img style={{width: "160px", margin: "30px 0"}} src={logo} alt="spotify-logo"/>
         <button onClick={() => {
           window.location = window.location.href.includes('localhost') 
           ? 'http://localhost:8888/login'

@@ -1,7 +1,8 @@
 .Playlists {
   min-width: 80%;
   padding: 30px;
-  margin-left: calc(15% + 60px);
+  margin-left: calc(15% + 55px);
+  background-color: #F4F6F9;
 }
 
 .playlistGrid {
@@ -9,6 +10,7 @@
   flex-flow: row wrap;
   justify-content: center;
   max-height: 100%;
+  padding-bottom: 50px
 }
 
 .gridItem {

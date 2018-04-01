@@ -30,7 +30,6 @@ const User = props => {
           </tr>
         </tbody>
       </table>
-      <a className="user-btn" href={props.uri} target="_blank">Mon compte</a>
       </div>
     </section>
   )

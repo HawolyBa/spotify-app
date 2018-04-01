@@ -5,11 +5,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
   font-family: 'Montserrat', sans-serif;
-  background: #F4F6F9;
-  height: 100vh;
+  /* background: #F4F6F9; */
+  background-image: linear-gradient(to right top, #fec76c, #ffa463, #ff7e6d, #ff5985, #ed3ea4);
 }
-
 ::-webkit-scrollbar {
   display: none;
   }
