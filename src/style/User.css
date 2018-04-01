@@ -122,7 +122,8 @@ table td {
   }
   
   .details {
-    margin-right: 0px
+    margin-right: 20px;
+    flex: 1
   }
 
   .User h2 {
@@ -139,18 +140,8 @@ table td {
     width: 50%;
     margin-right: 0;
     padding: 10px 0;
-    font-size: 10px
+    font-size: 10px;
+    flex: 1
   }
 
-  .group {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center
-  }
-
-  .user-btn {
-    font-size: 11px;
-    margin: 0
-  }
 }

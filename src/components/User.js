@@ -13,7 +13,7 @@ const User = props => {
     <section className="User">
       <div className="details">
         <h2>{props.username}, {props.country}</h2>
-        <img src={props.userpic} alt={props.username} className="avatar" />
+        <a href={props.uri} target="_blank"><img src={props.userpic} alt={props.username} className="avatar" /></a>
       </div>
       <div className="group">
       <table cellSpacing={"5"}>
