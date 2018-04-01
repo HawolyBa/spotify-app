@@ -50,6 +50,10 @@ table td {
 
 @media screen and (max-width: 1366px) {
 
+  .User{
+    height: 80vh;
+  }
+
   table {
     font-size: 11px;
     padding: 10px;
@@ -76,7 +80,8 @@ table td {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    height: 20vh
+    height: 20vh;
+    border-radius: 10px 10px 0 0;
   }
   .User h2 {
     font-size: 20px;
