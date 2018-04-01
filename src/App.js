@@ -11,11 +11,11 @@ import queryString from 'query-string';
 
 const button = {
   padding: "5px 20px",
-  color: "#23CF5F",
-  background: "rgba(255, 255, 255, 0.6)",
+  color: "#fff",
+  background: "rgba(255, 255, 255, 0.3)",
   borderRadius: "15px",
   border: "none",
-  boxShadow: "0 0 10px #a8a8a8"
+  boxShadow: "0 0 10px rgb(125,73,73)"
 }
 
 class App extends Component {
