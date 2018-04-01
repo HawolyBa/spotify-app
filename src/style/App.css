@@ -55,13 +55,28 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .wrapper {
+    height: 80vh;
+    width: 70%
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
-    flex-flow: column
+    flex-flow: column;
+    height: 95vh
   }
+
+  
 
   .trick {
     height: 70vh;
     top: 25%
+  }
+
+  .wrapper {
+    height: 90vh;
+    width: 70%
   }
 }

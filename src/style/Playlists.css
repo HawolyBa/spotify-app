@@ -7,7 +7,7 @@
 .playlistGrid {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   max-height: 100%;
 }
 
@@ -28,7 +28,8 @@
   .Playlists {
     width: 100%;
     margin-left: 0;
-    overflow-y: scroll
+    overflow-y: scroll;
+    height: 75vh
   }
   .playlistGrid {
     justify-content: center;

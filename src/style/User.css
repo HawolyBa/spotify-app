@@ -48,59 +48,93 @@ table td {
   padding: 3px
 }
 
+@media screen and (max-width: 1366px) {
+
+  table {
+    font-size: 11px;
+    padding: 10px;
+    margin: 0
+  }
+
+  .user-btn{
+    font-size: 12px;
+    margin: 20px 0
+  }
+
+  .User h2 {
+    font-size: 18px
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .User {
     width: 100%;
-    height: 20%;
     padding: 20px;
     position: static;
     background-size: 10%;
     background-position: right bottom;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-around;
+    height: 20vh
   }
   .User h2 {
-    font-size: 20px
+    font-size: 20px;
+    margin: 0;
+    padding: 0 0 20px 0
   }
+
   table {
-    font-size: 12px;
+    font-size: 14px;
     width: 50%;
-    margin-right: 50px
+  }
+
+  .details {
+    position: relative;
+    top: 30px;
   }
 
   .avatar {
-    width: 80px;
-    height: 80px
+    border: 3px solid #F4F6F9;
+    width: 50px;
+    height: 50px
   }
 
   .details {
     margin-right: 30px
   }
 
+  .user-btn{
+    display: none
+  }
+
 }
 
 @media screen and (max-width: 576px) {
+
+  .User {
+    justify-content: center
+  }
   
   .details {
     margin-right: 0px
   }
 
   .User h2 {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     font-size: 15px
   }
 
   .avatar {
-    width: 50px;
-    height: 50px
+    width: 40px;
+    height: 40px
   }
 
   table {
     width: 50%;
     margin-right: 0;
     padding: 10px 0;
-    font-size: 11px
+    font-size: 10px
   }
 
   .group {
