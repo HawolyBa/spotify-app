@@ -51,16 +51,6 @@ iframe {
 }
 
 
-@media screen and (max-width: 768px) {
- 
-}
-
-@media screen and (max-width: 992px) {
-  .trick {
-    display: none
-  }
-}
-
 @media screen and (max-width: 1366px) {
   .wrapper {
     height: 80vh;
@@ -85,4 +75,10 @@ iframe {
     height: 90vh;
     width: 70%
   }
+}
+
+@media screen and (max-width: 576px) {
+ .wrapper {
+   width: 90%;
+ }
 }

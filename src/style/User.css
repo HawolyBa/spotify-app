@@ -94,11 +94,6 @@ table td {
     width: 50%;
   }
 
-  .details {
-    position: relative;
-    top: 30px;
-  }
-
   .avatar {
     border: 3px solid #F4F6F9;
     width: 50px;
